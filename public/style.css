@@ -1,0 +1,86 @@
+/* BORRAR EN PROD */
+body {
+  background-color: whitesmoke;
+}
+
+/* PROPIEDADES DEL ÍÇONO DE LA BURBUJA */
+img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ESTILOS DEL LA BURBUJA Y ANIMACIÓN - AJUSTAR SEGUN SEA EL CASO */
+#open_chat {
+  position: absolute;
+  padding-left: 88vw;
+  padding-top: 75vh;
+
+  right: 30px;
+  bottom: 30px;
+
+  padding: 15px;
+  background: linear-gradient(180deg, #56c271, #009a44);
+  display: block;
+  border-radius: 50px;
+  box-shadow: 0px 2px 12px rgb(168 203 177 / 70%);
+  transition: all 200ms ease-in;
+  transition: all 200ms ease-out;
+}
+
+/* EVENTOS DEL MOUSE - SE PUEDE AJUSTAR SEGÚN SEA EL CASO */
+#open_chat:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -1px 6px 29px -11px rgba(11, 89, 7, 1);
+  -moz-box-shadow: -1px 6px 29px -11px rgba(11, 89, 7, 1);
+  box-shadow: -1px 6px 29px -11px rgba(11, 89, 7, 1);
+}
+
+/* Estilos para contenedores - BORRAR EN PROD */
+#principal_container{
+  width: 40vw;
+  margin-top: 20px;
+}
+
+/* DIMENSIONES Y POSICIONES DE LA BURBUJA DEL CHAT */
+button{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 10vw;
+}
+
+
+/* MEDIA QUERYS PARA LAS DIFERENTES VISTAS, SE PUEDEN AJUSTAR SEGUN 
+SEA EL CASO*/
+/** Initial iframe styles*/
+/* Smartphones - potrait */
+@media screen and (max-width: 600px),
+  screen and (max-device-width: 600px),
+  screen and (max-device-width: 600px) and (orientation: landscape),
+  screen and (max-device-width: 768px) and (orientation: landscape),
+  screen and (max-device-width: 823px) and (orientation: landscape),
+  screen and (max-device-width: 1200px) and (orientation: landscape) {
+  .genesys-mxg-responsive {
+    width: 0px;
+    height: 0px;
+    max-height: 90vh !important;
+    max-width: 90vw !important;
+     
+  }
+
+  .genesys-mxg-conversation {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+
+}
+
+/* Smartphones - landscape */
+@media screen and (max-device-width: 600px) and (orientation: landscape),
+  screen and (max-device-width: 768px) and (orientation: landscape),
+  screen and (max-device-width: 823px) and (orientation: landscape),
+  screen and (max-device-width: 1200px) and (orientation: landscape) {
+  .genesys-mxg-engage {
+    width: 380px;
+  }
+}
